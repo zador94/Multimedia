@@ -8,33 +8,25 @@ class VideoFile extends MultimediaFile
         parent::__construct($name, $duration);
     }
 
-    /**
-     * @return int
-     */
+
     public function getFrequency(): int
     {
         return $this->frequency;
     }
 
-    /**
-     * @param int $frequency
-     */
+
     public function setFrequency(int $frequency): void
     {
         $this->frequency = $frequency;
     }
 
-    /**
-     * @return string
-     */
+
     public function getScreenResolution(): string
     {
         return $this->screenResolution;
     }
 
-    /**
-     * @param string $screenResolution
-     */
+
     public function setScreenResolution(string $screenResolution): void
     {
         $this->screenResolution = $screenResolution;

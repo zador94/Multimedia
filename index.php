@@ -17,9 +17,12 @@ $playlist->setListFiles($audio3);
 $playlist->setListFiles($video1);
 $playlist->setListFiles($video2);
 
+$playlist->deleteListFiles('testVideo1');
+
 foreach ($playlist->getListFiles() as $file) {
     $file->showInfo();
 }
+
 
 
 $user1 = new User('Andrey');

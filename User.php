@@ -12,25 +12,19 @@ class User
         return $this->nameUser;
     }
 
-    /**
-     * @param string $nameUser
-     */
+
     public function setNameUser(string $nameUser): void
     {
         $this->nameUser = $nameUser;
     }
 
-    /**
-     * @return array
-     */
+
     public function getListPlaylist(): array
     {
         return $this->listPlaylist;
     }
 
-    /**
-     * @param array $listPlaylist
-     */
+
     public function setListPlaylist(Playlist $playlist): void
     {
         $this->listPlaylist[] = $playlist;
